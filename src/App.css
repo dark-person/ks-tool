@@ -5,10 +5,14 @@
   text-align: center;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/** Hide arrow in number input */
+@layer base {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"] {
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: textfield !important;
+    appearance: none;
+  }
 }
