@@ -51,7 +51,7 @@ export default function BannerCalcView() {
   }
 
   return (
-    <>
+    <div id="banner-calc-view">
       <h1 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance mb-8">
         Alliance Banner Resource Calculator
       </h1>
@@ -109,6 +109,6 @@ export default function BannerCalcView() {
           </TableRow>
         </TableBody>
       </Table>
-    </>
+    </div>
   )
 }
