@@ -11,9 +11,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[shadcn]": {
-    "editor.formatOnSave": false
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -50,15 +47,12 @@
     }
   ],
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "always"
+    "source.organizeImports": "never"
   },
   "editor.detectIndentation": true,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.unicodeHighlight.includeStrings": false,
-  "files.associations": {
-    "src/components/ui/*.tsx": "shadcn"
-  },
   "prettier.bracketSameLine": true,
   "prettier.printWidth": 120,
   "prettier.semi": false,
