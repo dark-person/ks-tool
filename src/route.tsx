@@ -23,6 +23,5 @@ export const ROUTE_MANAGER: RouteManager = {
   mapper: [
     { path: BASE_URL + "/", title: "Home", element: <HomeView />, hideInSidebar: true },
     { path: BASE_URL + "/banner", title: "Alliance Banner Resource", element: <BannerCalcView /> },
-    { path: BASE_URL + "/hello", title: "Hello World", element: <p>Hello World</p> },
   ],
 }
