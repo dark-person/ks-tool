@@ -13,7 +13,7 @@ export default function BannerCalcView() {
   const [requiredResource, setRequiredResource] = useState<BannerResource | undefined>(undefined)
 
   useEffect(() => {
-    if (builtBanner === undefined || isNaN(builtBanner)) {
+    if (builtBanner === undefined || Number.isNaN(builtBanner)) {
       setUsedResource(undefined)
       return
     }
@@ -27,7 +27,7 @@ export default function BannerCalcView() {
       return
     }
 
-    if (isNaN(targetBanner)) {
+    if (Number.isNaN(targetBanner)) {
       setRequiredResource(undefined)
       return
     }

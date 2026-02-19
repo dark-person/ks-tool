@@ -16,7 +16,7 @@ const STORAGE_KEY = "alliance-notice-generate-storage"
 export default function AllianceNoticeView() {
   // Init state from localStorage
   const [selectedIds, setSelectedIds] = useState<string[]>(() => {
-    if (typeof window !== "undefined") {
+    if (globalThis.window !== undefined) {
       const saved = localStorage.getItem(STORAGE_KEY)
       return saved ? JSON.parse(saved) : []
     }
@@ -39,7 +39,10 @@ export default function AllianceNoticeView() {
 
   // copy to clipboard function
   const copyToClipboard = async () => {
-    if (!generatedText) return
+    if (!generatedText) {
+      return
+    }
+
     try {
       await navigator.clipboard.writeText(generatedText)
       setCopied(true)
@@ -63,7 +66,7 @@ export default function AllianceNoticeView() {
         <CardContent className="space-y-6">
           {/* Checkbox list with responsive */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {ALLIANCE_NOTICE_OPTS.filter((option) => option.expired != true).map((option) => (
+            {ALLIANCE_NOTICE_OPTS.filter((option) => !option.expired).map((option) => (
               <div key={option.id} className="flex items-center space-x-3 space-y-0">
                 <Checkbox
                   id={option.id}
