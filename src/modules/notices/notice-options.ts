@@ -56,12 +56,30 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     text: "Golden Glaives\n-Ensure you use every item dim goldstones BEFORE UTC2359",
   },
 
+  // ==================== Last Day Related =====================================
+
   // Champagne Fair
   {
     id: "champagne-fair-last-day",
     label: "Champagne Fair - Last day",
     text: "Champagne Fair:\n- Last day. Ensure you use all spare hero shard in fair to get more item.",
   },
+
+  // Fishing Event
+  {
+    id: "fishing-event-last-day",
+    label: "Fishing Event - Last day",
+    text: "Fishing Event:\n- Last day. Ensure use all regular bait as you can.",
+  },
+
+  // Champion's Way
+  {
+    id: "champion-way-last-day",
+    label: "Champion's Way - Last day",
+    text: "Champion's Way:\n- Last day. Ensure completed 10 rally to get all reward.",
+  },
+
+  // ==================== Last Day Related =====================================
 
   // Cesare Boss
   {
@@ -70,11 +88,18 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     text: "Cesare Boss (UTC)\n- Send 1 infantry only to attack boss once (For all wave)\n- After r4/r5 say ok, you can use full march to attack",
   },
 
+  // KvK Prepare
+  {
+    id: "kvk-intel-mission",
+    label: "KvK - Save Intel Mission",
+    text: "KvK\n-Finish and not claim reward of UTC08 Mission\n-DONT DO any mission in UTC16",
+  },
+
   // KvK Battle Phase
   {
     id: "kvk-battle",
     label: "KvK - Shield Reminder",
-    text: "KvK (Battle Phase)\n- Invaders during UTC10 to UTC20\n\nSuggest shield schedule\n- Active free shield in UTC04 ~ UTC09, earn point in UTC12, active free shield again after enough point or UTC13",
+    text: "KvK (Battle Phase)\n- Invaders during UTC10 to UTC20\n\nSuggested Schedule\n- UTC04~09 Use Free Shield\n- UTC1140 Teleport to battle zone\n- UTC12 Castle battle\n- After UTC13: Active free shield again after enough point",
   },
 
   // Limited event
@@ -95,5 +120,10 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     id: "Save Kvk",
     label: "REMIND: KvK Save Resource",
     text: "Remember save resource for Kvk, include truegold dust!",
+  },
+  {
+    id: "auto-join-rally",
+    label: "REMIND: Auto Join",
+    text: "Please open auto join rally before offline to help people to earn points.",
   },
 ]
