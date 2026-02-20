@@ -32,12 +32,80 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     text: "Swordland/Tri-Alliance\n- Register BEFORE UTC15 if you able to join",
   },
 
-  // Viking
+  // ==================== KvK Related ===============================
+  // KvK Prepare
   {
-    id: "viking",
-    label: "Viking",
-    text: "Viking UTC\n- Send all your infantry and cavalry to reinforce other\n- Only send 70K to HQ\n- Online to earn more point, post you coordination in alliance chat if you are going to online that time\n- DONT HEAL",
+    id: "kvk-intel-mission",
+    label: "KvK - Save Intel Mission",
+    text: "KvK\n-Finish and not claim reward of UTC08 Mission\n-DONT DO any mission in UTC16",
   },
+  {
+    id: "kvk-day1",
+    label: "KvK - Day 1",
+    text: "KvK\n-Building, Research, Upgrade Charm\n-Ensure gathering return after UTC00",
+  },
+  {
+    id: "kvk-day2",
+    label: "KvK - Day 2",
+    text: "KvK\n-Hero Roulette\n-Ensure gathering return BEFORE UTC00\n-Finish and not claim reward of UTC08 Mission\n-DONT DO any mission in UTC16",
+  },
+  {
+    id: "kvk-day3",
+    label: "KvK - Day 3",
+    text: "KvK\n-Spend Hero Shard-LAST DAY for Hero Shard & Roulette\n-Ensure gathering return after UTC00",
+  },
+  {
+    id: "kvk-day4",
+    label: "KvK - Day 4",
+    text: "KvK\n-TRAIN TROOP\n-LAST DAY for Charm & Troop Train\n-Finish and not claim reward of UTC08 Mission\n-DONT DO any mission in UTC16",
+  },
+  {
+    id: "kvk-day5",
+    label: "KvK - Day 5",
+    text: "KvK\n-Use ALL Pet upgrade, Gonvenor Gear, ForgeHammer, Widget",
+  },
+  {
+    id: "kvk-pause",
+    label: "KvK - Pause",
+    text: "KvK\n-Prep Phase certain lose, save item for next KvK",
+  },
+
+  // KvK Battle Phase
+  {
+    id: "kvk-battle",
+    label: "KvK - Shield Reminder",
+    text: "KvK (Battle Phase)\n- Invaders during UTC10 to UTC20\n\nSuggested Schedule\n- UTC04~09 Use Free Shield\n- UTC1140 Teleport to battle zone\n- UTC12 Castle battle\n- After UTC13: Active free shield again after enough point",
+  },
+
+  // ==================== KvK Related ===============================
+
+  // ==================== Last Day Remind ===========================
+  {
+    id: "golden-glaives-end",
+    label: "Golden Glaives - Ended",
+    text: "Golden Glaives\n-Ensure you use every item dim goldstones BEFORE UTC2359",
+  },
+  {
+    id: "buccaneer-bounty-end",
+    label: "Buccaneer Bounty - Ended",
+    text: "Buccaneer Bounty\n-Ensure you use every pearl TODAY",
+  },
+  {
+    id: "champagne-fair-last-day",
+    label: "Champagne Fair - Last day",
+    text: "Champagne Fair:\n- Last day. Ensure you use all spare hero shard in fair to get more item.",
+  },
+  {
+    id: "fishing-event-last-day",
+    label: "Fishing Event - Last day",
+    text: "Fishing Event:\n- Last day. Ensure use all regular bait as you can.",
+  },
+  {
+    id: "champion-way-last-day",
+    label: "Champion's Way - Last day",
+    text: "Champion's Way:\n- Last day. Ensure completed 10 rally to get all reward.",
+  },
+  // ==================== Last Day Remind ===========================
 
   // Golden Glaives
   {
@@ -50,36 +118,22 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     label: "Golden Glaives - Last Day",
     text: "Golden Glaives\n-LAST DAY. Ensure finish all intel mission in UTC1600 ~ UTC2359",
   },
+
+  // Buccaneer Bounty
   {
-    id: "golden-glaives-end",
-    label: "Golden Glaives - Ended",
-    text: "Golden Glaives\n-Ensure you use every item dim goldstones BEFORE UTC2359",
+    id: "buccaneer-bounty-active",
+    label: "Buccaneer Bounty - Active",
+    text: "Buccaneer Bounty\n-Daily: 10 Beasts, 1000m speedup, Epic Recruitment x2",
   },
 
-  // ==================== Last Day Related =====================================
+  // ================= Familar Alliance Event =======================
 
-  // Champagne Fair
+  // Viking
   {
-    id: "champagne-fair-last-day",
-    label: "Champagne Fair - Last day",
-    text: "Champagne Fair:\n- Last day. Ensure you use all spare hero shard in fair to get more item.",
+    id: "viking",
+    label: "Viking",
+    text: "Viking UTC\n- Send all your infantry and cavalry to reinforce other\n- Only send 70K to HQ\n- Online to earn more point, post you coordination in alliance chat if you are going to online that time\n- DONT HEAL",
   },
-
-  // Fishing Event
-  {
-    id: "fishing-event-last-day",
-    label: "Fishing Event - Last day",
-    text: "Fishing Event:\n- Last day. Ensure use all regular bait as you can.",
-  },
-
-  // Champion's Way
-  {
-    id: "champion-way-last-day",
-    label: "Champion's Way - Last day",
-    text: "Champion's Way:\n- Last day. Ensure completed 10 rally to get all reward.",
-  },
-
-  // ==================== Last Day Related =====================================
 
   // Cesare Boss
   {
@@ -88,21 +142,7 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     text: "Cesare Boss (UTC)\n- Send 1 infantry only to attack boss once (For all wave)\n- After r4/r5 say ok, you can use full march to attack",
   },
 
-  // KvK Prepare
-  {
-    id: "kvk-intel-mission",
-    label: "KvK - Save Intel Mission",
-    text: "KvK\n-Finish and not claim reward of UTC08 Mission\n-DONT DO any mission in UTC16",
-  },
-
-  // KvK Battle Phase
-  {
-    id: "kvk-battle",
-    label: "KvK - Shield Reminder",
-    text: "KvK (Battle Phase)\n- Invaders during UTC10 to UTC20\n\nSuggested Schedule\n- UTC04~09 Use Free Shield\n- UTC1140 Teleport to battle zone\n- UTC12 Castle battle\n- After UTC13: Active free shield again after enough point",
-  },
-
-  // Limited event
+  // =================  Limited event ==========================
   {
     id: "moonlit-promise",
     label: "Moonlit Promise (Limited Time)",
@@ -115,7 +155,7 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     expired: true,
   },
 
-  // Appendix Reminder
+  // ================= Appendix Reminder =================
   {
     id: "Save Kvk",
     label: "REMIND: KvK Save Resource",
