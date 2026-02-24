@@ -1,6 +1,6 @@
 import "@/App.css"
 
-import { BrowserRouter, Route, Routes, useLocation, useNavigate } from "react-router"
+import { HashRouter, Route, Routes, useLocation, useNavigate } from "react-router"
 
 import { ThemeProvider } from "@/components/theme-provider"
 import {
@@ -18,20 +18,20 @@ import { AppSidebar } from "@/sidebar/app-sidebar"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <SidebarProvider>
           <AppSidebar />
           <CoreApp />
         </SidebarProvider>
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
 function CoreApp() {
   const location = useLocation()
-  const nagivate = useNavigate()
+  const navigate = useNavigate()
 
   return (
     <SidebarInset>
@@ -41,7 +41,7 @@ function CoreApp() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem className="hidden md:block">
-              <BreadcrumbLink className="cursor-pointer" onClick={() => nagivate(ROUTE_MANAGER.indexUrl)}>
+              <BreadcrumbLink className="cursor-pointer" onClick={() => navigate(ROUTE_MANAGER.indexUrl)}>
                 Kingshot Calc
               </BreadcrumbLink>
             </BreadcrumbItem>
