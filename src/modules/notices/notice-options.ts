@@ -62,12 +62,12 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
   {
     id: "kvk-day5",
     label: "KvK - Day 5",
-    text: "KvK\n-Use ALL Pet upgrade, Gonvenor Gear, ForgeHammer, Widget",
+    text: "KvK\n-Use ALL Pet upgrade, Governor Gear, ForgeHammer, Widget",
   },
   {
     id: "kvk-pause",
-    label: "KvK - Pause",
-    text: "KvK\n-Prep Phase certain lose, save item for next KvK",
+    label: "KvK - Save for next Kvk",
+    text: "KvK\n-Do minimum, save item for next KvK",
   },
 
   // KvK Battle Phase
@@ -98,7 +98,7 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
   {
     id: "fishing-event-last-day",
     label: "Fishing Event - Last day",
-    text: "Fishing Event:\n- Last day. Ensure use all regular bait as you can.",
+    text: "Fishing Event:\n- Last day. Use all regular bait as you can.",
   },
   {
     id: "champion-way-last-day",
@@ -116,7 +116,7 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
   {
     id: "golden-glaives-last-day",
     label: "Golden Glaives - Last Day",
-    text: "Golden Glaives\n-LAST DAY. Ensure finish all intel mission in UTC1600 ~ UTC2359",
+    text: "Golden Glaives\n-LAST DAY. Do all intel mission in UTC1600 ~ UTC2359",
   },
 
   // Buccaneer Bounty
@@ -126,13 +126,13 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     text: "Buccaneer Bounty\n-Daily: 10 Beasts, 1000m speedup, Epic Recruitment x2",
   },
 
-  // ================= Familar Alliance Event =======================
+  // ================= Familiar Alliance Event =======================
 
   // Viking
   {
     id: "viking",
     label: "Viking",
-    text: "Viking UTC\n- Send all your infantry and cavalry to reinforce other\n- Only send 70K to HQ\n- Online to earn more point, post you coordination in alliance chat if you are going to online that time\n- DONT HEAL",
+    text: "Viking UTC\n- Send all infantry and cavalry to reinforce\n- Only 70K in HQ\n- Online to earn more point\n- DONT HEAL",
   },
 
   // Cesare Boss
