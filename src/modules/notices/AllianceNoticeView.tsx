@@ -86,8 +86,8 @@ export default function AllianceNoticeView() {
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <Label htmlFor="result">Generated (Length : {generatedText.length})</Label>
-              <span className={generatedText.length <= 250 ? "invisible" : "text-red-500"}>
-                WARNING: Exceed 250 Characters.
+              <span className={generatedText.length <= 300 ? "invisible" : "text-red-500"}>
+                WARNING: Exceed 300 Characters.
               </span>
 
               {/* Copy icon for mobile */}
