@@ -142,6 +142,13 @@ export const ALLIANCE_NOTICE_OPTS: AllianceNoticeOpt[] = [
     text: "Cesare Boss (UTC)\n- Send 1 infantry only to attack boss once (For all wave)\n- After r4/r5 say ok, you can use full march to attack",
   },
 
+  // ================= Common Event =========================
+  {
+    id: "sovereign-call",
+    label: "Call of the Sovereign",
+    text: "Call of the Sovereign\n- Use 10 Sliver Key, 30 Gold Key, 10 Terror, 15 Beast, Gathering 10M",
+  },
+
   // =================  Limited event ==========================
   {
     id: "moonlit-promise",
